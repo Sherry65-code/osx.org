@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    body{
+        background-image: url('./wal.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    *{
+        font-family: 'Raleway', sans-serif;
+        color: aliceblue;
+    }
+    .header{
+        background-color: rgba(134, 198, 255, 0.815);
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding-block-start: 10px;
+        padding-block-end: 10px;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+    }
+    .main{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 48px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar{
+        background-color: rgb(136, 183, 255);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(0, 136, 255);
+        border-radius: 18px;
+        border: 4px rgb(136, 183, 255) solid; 
+    }
+    button{
+        background-color: rgb(0, 136, 255);
+        color: aliceblue;
+        font-weight: 800;
+        border: none;
+        padding: 5px 10px;
+        outline: none;
+    }
+    button:hover{
+        transition-duration: 0.3s;
+        filter: brightness(0.7);
+    }
+    .down{
+        float: right;
+    }
+    body{
+        text-align: center;
+    }
+    #downe{
+        background-color: aliceblue;
+        position: absolute;
+        border-radius: 18px;
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
+        color: black;
+        padding-inline-start: 40px;
+        visibility: hidden;
+    }
+    .d{
+        color: black;
+        
+    }
+    .close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: aliceblue;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <title>Invento OSX | Official Website</title>
+</head>
+<body>  
+<div class="header"><span style="float: left;"> Invento OSX </span><button class="down" onclick="opene()">Download</button></div>
+<div class="main"><br><br><br>
+<h1>Welcome to Invento</h1><br><br>
+<h3>Launching Next Generation Invento OSX </h3><br><br>
+With a Virtual Machine <br><br>
+<h1>With New Desktop Vision</h1>
+<img src="./scr1.png" width="80%" alt="">
+<br><br>
+<h1>& The all new New Designed OS for better experience</h1>
+<img src="./scr2.png" alt="" width="80%">
+<div id="downe">
+<h1 class="d">Download For Windows</h1><br><br><br><img  src="close.svg" alt="" class="close" onclick="closee()">
+<img src="./lg.png" height="60%" alt="" style="float: left;"><a href=""><button onclick="window.open('https://drive.google.com/u/0/uc?export=download&confirm=kSGL&id=1rGc91hBtAlKh3Fe5Re3t9Pqo3u1cbEY1');">Download for x64 or 64 bit</button></a><br><br><br><br>
+<button onclick="window.open('https://github.com/Sherry65-code/OSX');">Download Source Code</button>
+</div>
+<h1>Info :- Supports Windows Only</h1>
+</div>
+
+    <script>
+        function closee() {
+        document.getElementById('downe').style = "visibility: hidden;";
+        }
+        function opene() {
+            if (innerWidth > 700){
+            document.getElementById('downe').style = "visibility: visible;";
+        }
+        else if (innerWidth <= 699){
+           alert("Please switch to a Computer or Laptop to download this file");
+        }
+    }
+        </script>
+</body>
+</html>
