@@ -12,12 +12,15 @@
             background-attachment: fixed;
             overflow-y: hidden;
             overflow-x: hidden;
+            animation: 30s infinite wal;
+            animation-timing-function: cubic-bezier(1,1,1,1);
         }
-body:hover{
-    transition-delay: 5s;
-    transition-duration: 2s;
-    background-image: url('./wal2.jpg');
-}
+        @keyframes wal {
+            20%{background-image: url('./wal2.jpg');}
+            60%{background-image: url('https://wallpapercave.com/wp/ykgEPwd.jpg');}
+            100%{background-image: url('./wal.jpg');}
+        }
+
         * {
             font-family: 'Raleway', sans-serif;
             color: aliceblue;
