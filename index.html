@@ -13,7 +13,11 @@
             overflow-y: hidden;
             overflow-x: hidden;
         }
-
+body:hover{
+    transition-delay: 5s;
+    transition-duration: 2s;
+    background-image: url('./wal2.jpg');
+}
         * {
             font-family: 'Raleway', sans-serif;
             color: aliceblue;
@@ -102,6 +106,34 @@
         ::selection {
             background-color: rgba(240, 248, 255, 0.274);
         }
+        .b1{
+            background-color: rgb(6, 152, 250);
+            padding: 35px 35px;
+            position: absolute;
+            left: 20px;
+            top: 20%;
+        }
+        .b2{
+            background-color: rgb(6, 152, 250);
+            padding: 35px 35px;
+            position: absolute;
+            left: 100px;
+            top: 20%;
+        }
+        .b3{
+            background-color: rgb(6, 152, 250);
+            padding: 35px 35px;
+            position: absolute;
+            left: 20px;
+            top: 35%;
+        }
+        .b4{
+            background-color: rgb(6, 152, 250);
+            padding: 35px 35px;
+            position: absolute;
+            left: 100px;
+            top: 35%;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,7 +157,12 @@
         <div id="downe">
             <h1 class="d">Download For Windows</h1><br><br><br><img src="close.svg" alt="" class="close"
                 onclick="closee()">
-            <img src="./lg.png" height="60%" alt="" style="float: left;"><a href=""><button
+            <!-- <img src="./lg.png" height="60%" alt="" style="float: left;">--><a href="">
+               <div class="an"> <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                <div class="b4"></div>
+                </div><button 
                     onclick="window.open('https://drive.google.com/u/0/uc?export=download&confirm=kSGL&id=1rGc91hBtAlKh3Fe5Re3t9Pqo3u1cbEY1');">Download
                     for x64 or 64 bit</button></a><br><br><br><br>
             <button onclick="window.open('https://github.com/Sherry65-code/OSX');">Download Source Code</button>
@@ -165,7 +202,6 @@
                 clearInterval(myVar);
             }
         }
-
     </script>
 </body>
 
